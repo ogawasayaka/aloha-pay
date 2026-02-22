@@ -46,10 +46,15 @@ export default function HawaiiTipApp() {
 
   return (
     <div className="min-h-screen bg-[#f0f9ff] p-4 pb-24 font-sans text-slate-800">
-      <header className="py-4 text-center">
-        <h1 className="text-3xl font-black text-sky-500 tracking-tight">ALOHA PAY 🌺</h1>
-        <p className="text-xs font-bold text-sky-300">子連れハワイの家計簿＆計算</p>
-      </header>
+  <header className="py-4 flex justify-between items-center px-2">
+    <div className="w-8"></div> {/* 空白のバランス用 */}
+    <div className="text-center">
+      <h1 className="text-3xl font-black text-sky-500 tracking-tight text-center">ALOHA PAY 🌺</h1>
+      <p className="text-xs font-bold text-sky-300">子連れハワイの家計簿＆計算</p>
+    </div>
+    <Link href="/settings" className="text-2xl hover:opacity-70 transition">⚙️</Link>
+  </header>
+
 
       {/* 為替設定 */}
       <div className="bg-white/60 backdrop-blur-sm p-3 rounded-xl mb-4 border border-sky-100 flex justify-between items-center">
